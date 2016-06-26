@@ -39,7 +39,8 @@ class ListHandler(tornado.web.RequestHandler):
 def main():
     app = tornado.web.Application([
         (r"/",MyFormHandler),
-        (r"/myform/([0-9]+)",FileHandler),
+        (r"/myform",FileHandler),
+#        (r"/myform/([0-9]+)",FileHandler),
         (r"/list",ListHandler)
         ])
     app.listen(1234)
