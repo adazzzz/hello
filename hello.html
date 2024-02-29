@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,23 @@
     <!-- Open Graph Protocol -->
     <meta property="og:title" content="Simple Web Page" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="path_to_your_image_with_dimensions_500x300.png" />
+    <meta property="og:image" content="ogimg.png" />
     <meta property="og:url" content="https://adazzzz.github.io/hello/hello.html" />
+
+    <meta property='fc:frame:post_url' content="https://www.colib.app/" />
+
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="fcimg.png" />
+
+    <meta property="fc:frame:button:1" content="Hi" />
+    <meta property="fc:frame:button:1:action" content="post_redirect" />
+    <meta property="fc:frame:button:1:target" content="https://adazzzz.github.io/hello/hello2.html/" />
+
+    <meta property="fc:frame:button:2" content="Details" />
+    <meta property="fc:frame:button:2:action" content="link" />
+    <meta property="fc:frame:button:2:target" content="https://www.colib.app/" />
+
+
     <style>
         body {
             margin: 0;
@@ -17,22 +33,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            /* Example gradient */
         }
+
         #message {
             font-size: 24px;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
     <div id="message">🐿️：Hello frame!</div>
-    <button onclick="changeText()">Hi</button>
-    <button onclick="window.location.href='http://google.com'">Details</button>
-    <script>
-        function changeText() {
-            document.getElementById("message").innerText = "Have a good day.";
-        }
-    </script>
+
 </body>
+
 </html>
